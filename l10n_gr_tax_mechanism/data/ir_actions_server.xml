@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+
+        <record id="send_to_tax_mechanism" model="ir.actions.server">
+            <field name="name">Send To Tax Mechanism</field>
+            <field name="model_id" ref="model_account_invoice" />
+            <field name="state">code</field>
+            <field name="condition">True</field>
+            <field name="sequence">1</field>
+            <field name="code">model.send_to_tax_mechanism()</field>
+        </record>
+
+    </data>
+</odoo>

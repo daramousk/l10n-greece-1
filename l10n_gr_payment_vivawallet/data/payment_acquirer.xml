@@ -1,0 +1,23 @@
+<odoo noupdate="1">
+
+    <record id="payment_acquirer_vivawallet" model="payment.acquirer">
+        <field name="name">Viva Wallet</field>
+        <field
+            name="image"
+            type="base64"
+            file="account_payment_vivawallet/static/description/icon.png" />
+        <field name="provider">vivawallet</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="view_template_id" ref="vivawallet_form"/>
+        <field name="vivawallet_public_key">Fill Your Public Key</field>
+        <field name="vivawallet_baseurl">
+            https://demo.vivapayments.com/web/checkout/js
+        </field>
+        <field name="environment">test</field>
+        <field name="pre_msg"><![CDATA[
+            <p>You will be prompted with Viva Wallet's 
+            payment page for payment information.</p>]]>
+        </field>
+    </record>
+
+</odoo>

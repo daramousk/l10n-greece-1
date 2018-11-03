@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="vivawallet_form">
+        <form
+            t-if="acquirer"
+            method="post"
+            action="/payment/vivawallet/create_charge"
+            class="o_website_payment_form"
+            target="_self">
+            <script
+                t-attf-src="{{acquirer.vivawallet_baseurl}}/web/checkout/js">
+            </script>
+            <input
+                type="hidden"
+                name="csrf_token"
+                t-att-value="request.csrf_token()" />
+            <input
+                type="hidden"
+                name="vivawallet_baseurl"
+                t-att-value="acquirer.vivawallet_baseurl" />
+            <input
+                type="hidden"
+                name="acquirer_id"
+                t-att-value="acquirer.id" />
+            <button
+                id="pay_vivawallet"
+                width="100px"
+                type="button"
+                t-att-class="submit_class"
+                t-att-data-vp-publickey="acquirer.vivawallet_public_key"
+                t-att-data-vp-amount="amount"
+                t-att-data-vp-merchantref="reference"
+                t-att-data-vp-lang="lang"
+                t-att-data-vp-baseurl="baseurl">
+            </button>
+        </form>
+    </template>
+
+</odoo>

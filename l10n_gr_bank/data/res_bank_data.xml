@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="AEGEAN_BALTIC" model="res.bank">
+        <field name="name">AEGEAN BALTIC BANK S.A.</field>
+        <field name="bic">AEBAGRAA</field>
+    </record>
+    <record id="ALPHA_BANK" model="res.bank">
+        <field name="name">ALPHA BANK AE</field>
+        <field name="bic">CRBAGRAA</field>
+    </record>
+    <record id="ATTICA_BANK" model="res.bank">
+        <field name="name">ATTICA BANK SA</field>
+        <field name="bic">AEBAGRAA</field>
+    </record>
+    <record id="BANK_OF_AMERICA_ATHENS" model="res.bank">
+        <field name="name">BANK OF AMERICA, N.A. ATHENS</field>
+        <field name="bic">BOFAGR2X</field>
+    </record>
+    <record id="BANK_OF_GREECE" model="res.bank">
+        <field name="name">BANK OF GREECE</field>
+        <field name="bic">BNGRGRAA</field>
+    </record>
+    <record id="BLACK_SEA_TRADE_AND_DEVELOPMENT" model="res.bank">
+        <field name="name">BLACK SEA TRADE AND DEVELOPMENT BANK</field>
+        <field name="bic">BSTDGR2T</field>
+    </record>
+    <record id="BNP_PARIBAS_SECUR" model="res.bank">
+        <field name="name">BNP PARIBAS SECURITIES SERVICES</field>
+        <field name="bic">PARBGRAX</field>
+    </record>
+    <record id="CITIBANK_EUROPE_PLC_GR" model="res.bank">
+        <field name="name">CITIBANK EUROPE PLC GREECE BRANCH</field>
+        <field name="bic">CITIGRAA</field>
+    </record>
+    <record id="EUROBANK_ERGASIAS" model="res.bank">
+        <field name="name">EUROBANK ERGASIAS S.A</field>
+        <field name="bic">ERBKGRAA</field>
+    </record>
+    <record id="KEDR_PJSC_CB" model="res.bank">
+        <field name="name">KEDR PJSC CB GREEK BRANCH</field>
+        <field name="bic">KEDRGRAA</field>
+    </record>
+    <record id="HELLENIC_EXCHANGES" model="res.bank">
+        <field name="name">HELLENIC_EXCHANGES S.A.</field>
+        <field name="bic">HCSDGRAA</field>
+    </record>
+    <record id="HSBC_PLC" model="res.bank">
+        <field name="name">HSBC_BANK_PLC (ALL GREEK BRANCHES)</field>
+        <field name="bic">MIDLGRAA</field>
+    </record>
+    <record id="INVESTMENT_BANK_OF_GREECE" model="res.bank">
+        <field name="name">INVESTMENT BANK OF GREECE S.A.</field>
+        <field name="bic">IBOGGRAA</field>
+    </record>
+    <record id="NATIONAL_BANK_OF_GREECE" model="res.bank">
+        <field name="name">NATIONAL BANK OF GREECE S.A</field>
+        <field name="bic">ETHNGRAA</field>
+    </record>
+    <record id="OLAYAN_INVESTMENTS_COMPANY" model="res.bank">
+        <field name="name">OLAYAN INVESTMENTS COMPANY ESTABLISHMENT</field>
+        <field name="bic">OLAYGR22</field>
+    </record>
+    <record id="PIRAEUS_BANK" model="res.bank">
+        <field name="name">PIRAEUS BANK S.A.</field>
+        <field name="bic">PIRBGRAA</field>
+    </record>
+    <record id="PROCREDIT_BANK_EAD" model="res.bank">
+        <field name="name">PROCREDIT BANK (BULGARIA) EAD THESSALONIKI BRANCH</field>
+        <field name="bic">PRCBGRAA</field>
+    </record>
+    <record id="ROYAL_BANK_OF_SCOTLAND" model="res.bank">
+        <field name="name">ROYAL BANK OF SCOTLAND PLC</field>
+        <field name="bic">RBOSGRAA</field>
+    </record>
+    <record id="TC_ZIRAAT_BANKASI" model="res.bank">
+        <field name="name">T.C. ZIRAAT BANKASI ATHENS CENTRAL BRANCH</field>
+        <field name="bic">TCZBGRAT</field>
+    </record>
+    <record id="UNICREDIT_BANK_AG" model="res.bank">
+        <field name="name">UNICREDIT BANK AG (HYPOVEREINSBANK) ATHENS</field>
+        <field name="bic">HYVEGRAA</field>
+    </record>
+    <record id="VIVA_PAYMENT_SERVICES" model="res.bank">
+        <field name="name">VIVA PAYMENT SERVICES S.A.</field>
+        <field name="bic">VPAYGRAA</field>
+    </record>
+</odoo>

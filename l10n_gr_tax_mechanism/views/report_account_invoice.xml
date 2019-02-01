@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template
+        id="report_invoice_document"
+        inherit_id="account.report_invoice_document">
+        <xpath expr="//div[name='invoice_address']" position="after">
+            <span t-if="o.sfs">ΣΦΣ: <span t-field="o.sfs"/></span>
+            <span t-if="o.sfs"><span t-field="o.sfs_barcode"/></span>
+        </xpath>
+    </template>
+
+</odoo>

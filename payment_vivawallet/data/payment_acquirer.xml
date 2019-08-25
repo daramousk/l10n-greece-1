@@ -1,0 +1,50 @@
+<odoo>
+
+    <record id="payment_acquirer_vivawallet" model="payment.acquirer">
+        <field name="name">Viva Wallet</field>
+        <field
+            name="image"
+            type="base64"
+            file="payment_vivawallet/static/description/icon.png"/>
+        <field name="provider">vivawallet</field>
+        <field name="module_id" ref="base.module_payment_vivawallet"/>
+        <field name="description" type="html">
+            <p>
+                A payment gateway to accept online payments 
+            </p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <i class="fa fa-check"/>
+                    Online Payment
+                </li>
+                <li class="list-inline-item">
+                    <i class="fa fa-check"/>
+                    Payment Status Tracking
+                </li>
+            </ul>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="view_template_id" ref="vivawallet_form"/>
+        <field name="vivawallet_public_key">Fill Your Public Key</field>
+        <field name="vivawallet_baseurl">
+            https://demo.vivapayments.com/web/checkout/js
+        </field>
+        <field name="environment">test</field>
+        <field name="pre_msg"><![CDATA[
+            <p>You will be prompted with Viva Wallet's 
+            payment page for payment information.</p>]]>
+        </field>
+        <field name="specific_countries" eval="False"/> <!--TODO-->
+        <field name="payment_icon_ids" eval='[
+            (6, 0, [
+                ref("payment.payment_icon_cc_visa"),
+                ref("payment_icon_cc_visa_electron"),
+                ref("payment.payment_icon_cc_maestro"),
+                ref("payment.payment_icon_cc_mastercard"),
+                ref("payment.payment_icon_cc_american_express"),
+            ]
+            )]'>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,11 @@
+<odoo>
+
+    <record id="payment_icon_cc_visa_electron" model="payment.icon">
+        <field name="name">VISA ELECTRON</field>
+        <field
+            name="image"
+            type="base64"
+            file="payment_vivawallet/static/img/visa_electron.png"/>
+    </record>
+
+</odoo>
